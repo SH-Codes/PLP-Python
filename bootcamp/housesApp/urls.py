@@ -3,5 +3,5 @@ from .import views
 
 urlpatterns = [
     path('home', views.houseListings, name = "home" ),
-    path('details', views.retrieveDetails, name = "details"),
+    path('details/<pk>/', views.retrieveDetails, name = "details"),
 ]
